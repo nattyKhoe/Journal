@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Schoolbell&v1); /* font-family: 'SchoolBell', cursive; */
+/*General layout rules*/
+/* scale all images, and media to accomodate responsive layout. */
+*{
+    text-align: center;
+}
+img, video, audio, iframe, table, form { 
+    width:100%; /* IE */
+    max-width: 100%; /* FF, Safari, Chrome */
+  }
+body{
+    font-family: Helvetica, Arial, sans-serif; /*Based on reccomendation from W3 re: websafe font and come reading re: preferred font for dyslexia*/
+    background-image: url(../img/Background.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+/*Centering h2*/
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;   
+}
+/**giving some shadow to give a some dimension to the section**/
+.container{
+    box-shadow: 3px;
+    margin:5%;
+    padding:5%;
+}
+.shadow {
+    box-shadow: 0 3px 10px #333;
+  }
+
+section{
+    padding: 20px;
+    background: rgb(248, 244, 238);
+    margin:0 0 5% 0;
+}
+/*Clearfixed the section so the content is inside the section*/
+section:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+  }
+/*navbar layout*/
+  #navbar{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+    background: url(../img/header-fade.gif);
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0 10px #333;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+#navbar a {
+    display: inline-block;
+    width: 15%;
+    margin: 0;
+    padding: 22px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font: 1.5rem "Trebuchet MS", Arial, sans-serif;
+}
+/*navbar function when cursor hover or select the hyperlink*/
+#navbar a.selected {
+    background: black;
+    color: white;
+  }
+  
+#navbar a:hover {
+    color:white;
+    text-transform: uppercase;
+    /* gradient */
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(71,71,71,1) 28%, rgba(81,81,81,1) 35%, rgba(71,71,71,1) 72%, rgba(43,43,43,1) 87%, rgba(28,28,28,1) 91%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(28%,rgba(71,71,71,1)), color-stop(35%,rgba(81,81,81,1)), color-stop(72%,rgba(71,71,71,1)), color-stop(87%,rgba(43,43,43,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* W3C */
+  }
+/*About Me: Setting the profile picture to be circular shape instead of rectangular*/
+#PP{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: white;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+/**Gallery: Resizing and aligning the pictures in the gallery with their figure caption**/
+.small{
+    width: 95%;
+    margin-left:auto;
+    margin-right: auto;
+}
+#framesmall{
+    background-color: white;
+    width:32%;
+    float:left;
+    margin:2pt;
+}
+.medium{
+    width: 95%;
+    margin-left:auto;
+    margin-right: auto;
+}
+#framemedium{
+    background-color: white;
+    width:97%;
+    float:left;
+    margin:2pt;
+    overflow: hidden;
+}
+figure figcaption{
+    margin-top: 3%;
+    font-family: schoolbell;
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*Timetable:Layout*/
+table, th, td {
+    border: rgb(248, 184, 177) 2px solid;
+    margin:0;
+    border-collapse: collapse;
+}
+
+td:hover{
+    background-color: blanchedalmond;
+    font-weight: bolder;
+}
+
+/*Contact Me: Layout*/
+input:not(:last-child), textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 3px 5px #ccc;
+    border: 1px solid #ccc;
+}  
+textarea{
+    text-align: left;
+    min-height: 5rem;
+}
+/*Button design was copied from getcssscan.com and was slightly modified according to the theme colour and functions*/
+input[type="submit"]{
+    float:right;
+    background-color: #f4e6ef;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+    
+input[type="submit"]{
+      outline: 0;
+    }
+    
+input[type="submit"]:after {
+      content: '';
+      position: absolute;
+      border: 1px solid #000000;
+      bottom: 4px;
+      left: 4px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
+    
+input[type="submit"]:hover:after {
+      bottom: 2px;
+      left: 2px;
+    }
+    
+@media (min-width: 768px) {
+    input[type="submit"] {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+      }
+    } 
+/*End of the copied part*/
+input[type="submit"]:hover{
+    background-color: #000000;
+    color:white;
+}
+/*Connect:Layout*/
+#smalllogo{
+    width:1rem;
+}
+
+#email, #linkedin {
+    display: inline-block;
+    font-size: larger;
+}
+/*Footer Section*/
+footer{
+    float:right;
+    font-weight: bolder;
+}

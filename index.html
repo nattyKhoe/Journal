@@ -1,11 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Website</title>
-        <link rel="stylesheet" href="style.css">
+        <title>NattyKhoe</title>
+        <link rel="stylesheet" href="./style/style.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
         <script src="script.js"></script>
+        <nav id="navbar">
+            <a href="#AboutMe">About Me</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Timetable">Timetable</a>
+            <a href="#ContactForm">Contact</a>
+            <a href="#Connect">Connect</a>
+        </nav>
+        <div class="container">
+        <!---About Me--->
+            <section class="shadow" id="AboutMe">
+                <br>
+                <img id="PP" src="./img/Profile Picture.jpg" alt="Profile Picture" title="Natasha Kusuma">
+                <div>
+                <h2>Natasha Kusuma</h2>
+                <a>I am a kindergarten teacher who is currently studying full-stack software engineering at Academy XI. I always love solving problems, hence, I always want to be a problem solver, let it be a doctor (I was training to be a doctor at one point), a geneticist, or a teacher. However, while I love solving puzzles and codes. While I enjoyed working with computer and did a bit of coding during high school as well as University, I never seriously thought to be a software developer until COVID19 pandemic. Since then, I have been thinking of upskilling myself to learn something new and potentially change my career path.</a>
+                </div>
+                <br>
+            </section>
+        <!---Tabs--->
+
+        <section id="Gallery" class="shadow">
+            <br>
+            <h2>Gallery</h2>
+            <br>
+            <div id="framemedium" class="shadow">
+                <figure class="medium">
+                <img src="./img/Gallery_Bingsu.jpg" alt="Korean Bingsu" title="Korean Bingsu">
+                <figcaption>
+                    Korean Bingsu
+                </figcaption>
+                </figure>
+            </div>
+            <div id="framesmall" class="shadow">
+                <figure class="small">
+                <img src="./img/Gallery_Cheesecake.jpg" alt="Cute Cheesecake" title="Cute Cheesecake">
+                <figcaption>
+                    Cute Cheesecake
+                </figcaption>
+                </figure>
+            </div>
+            <div id="framesmall" class="shadow">
+                <figure class="small">
+                <img src="./img/Gallery_Cookies.jpg" alt="Cute Cookies" title="Cute Cookies">
+                <figcaption>
+                    Christmas Cookie
+                </figcaption>
+                </figure>
+            </div>
+            <div id="framesmall" class="shadow">
+                <figure class="small">
+                <img src="./img/Gallery_LoadedFries.jpg" alt="Loaded Fries" title="Loaded Fries">
+                <figcaption>
+                    Loaded Fries
+                </figcaption>
+                </figure>
+            </div>
+            <div id="framesmall" class="shadow">
+                <figure class="small">
+                <img src="./img/Galley_ChaiLatte.jpg" alt="Chai Latte" title="Chai Latte">
+                <figcaption>
+                    Chai Latte
+                </figcaption>
+                </figure>
+            </div>
+            <div id="framesmall" class="shadow">
+                <figure class="small">
+                <img src="./img/Gallery_SmorePancake.jpg" alt="Gallery_SmorePancake" title="Gallery_SmorePancake">
+                <figcaption>
+                    Smores Pancake
+                </figcaption>
+                </figure>
+            </div>
+            <div id="framesmall" class="shadow">
+                <figure class="small">
+                <img src="./img/Gallery_PisangIjo.jpg" alt="Pisang Ijo" title="Pisang Ijo">
+                <figcaption>
+                    Pisang Ijo
+                </figcaption>
+                </figure>
+            </div>
+            <br>
+        </section>
+        <section id="Timetable" class="shadow">
+            <br>
+            <h2>Timetable</h2>
+            <br>
+            <table>
+                <thead>
+                    <th>Days/Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>07.00-09.00</th>
+                    <td rowspan="4">Work</td>
+                    <td rowspan="5">Work</td>
+                    <td rowspan="5">Work</td>
+                    <td rowspan="4">Work</td>
+                    <td rowspan="5">Work</td>
+                    <td>Cleaning/Laundry</td>
+                    <td>Cleaning/Laundry</td>
+                </tr>
+                <tr>
+                    <th>09.00-11.00</th>
+                    <td>Study</td>
+                    <td rowspan="2">Study</td>
+                </tr>
+                <tr>
+                    <th>11.00-13.00</th>
+                    <td>Gym</td>
+                </tr>
+                <tr>
+                    <th>13.00-15.00</th>
+                    <td rowspan="4">Study</td>
+                    <td rowspan="2">Socialising</td>
+                </tr>
+                <tr>
+                    <th>15.00-17.00</th>
+                    <td rowspan="2">Gym</td>
+                    <td>Gym</td>
+                </tr>
+                <tr>
+                    <th>17.00-19.00</th>
+                    <td>Study</td>
+                    <td>Gym</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Meal Prep</td>
+                </tr>
+                <tr>
+                    <th>19.00-21.00</th>
+                    <td>Study</td>
+                    <td>Workshop</td>
+                    <td>Study</td>
+                    <td>Workshop</td>
+                    <td>Socialising</td>
+                    <td>Budgeting</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+        </section>
+        <section id="ContactForm" class="shadow">
+            <br>
+            <h2>Contact Me</h2>
+            <br>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdmoYVx6RNvx_s5JSsROnoWIXFqh3y-Z2YQUr-g0P1MdYWM3g/formResponse">
+                <!--Full Name-->
+                <label for="FullName"> Full Name</label>
+                <input type="text" id="fullname" name="entry.1322597178" placeholder="Enter Name" required>
+                <!--Email-->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="entry.427872621" placeholder="Enter Email" required>
+                <!--Message-->
+                <label for="message">Message</label>
+                <textarea id="message" name="entry.772731861"> Hi Natasha,
+                </textarea>
+                <!--Send-->
+                <br>
+                <input type="submit" class="shadow" value="Send">
+            </form>
+            <br>
+        </section>
+        <section id="Connect" class="shadow">
+            <br>
+            <h2>Connect</h2>
+            <br>
+            <div id="email">
+                <a href="mailto:natasha.kusuma@outlook.com" class="hyperlink" style="text-decoration:none;color: black;">
+                <img href="mailto:natasha.kusuma@outlook.com" id="smalllogo" src="./img/Logo/mail.jpg" alt="email logo" title="email logo">
+                natasha.kusuma@outlook.com</a>
+                <a> | </a>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/natasha-kusuma-844028236" class="hyperlink" style="text-decoration: none;color: black;">
+                <img id="smalllogo" src="./img/Logo/LinkedIn.jpg" alt="linkedin logo" title="linkedin logo">
+                Natasha Kusuma
+                </a>
+            </div>
+            <br>
+        </section>
+        <footer>
+        <a>&copy 2022 Natasha Kusuma </a>    
+        </footer>
+    </div>
     </body>
 </html>
