@@ -124,6 +124,7 @@ figure figcaption{
     font-family: schoolbell;
     font-weight: bold;
     font-size: 2rem;
+    text-overflow: ellipsis;
 }
 /*Timetable:Layout*/
 table, th, td {
